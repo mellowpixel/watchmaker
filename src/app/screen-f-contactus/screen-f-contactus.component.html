@@ -1,0 +1,51 @@
+<section id="crew-screen" [style.height.px]="height" [ngClass]="inSight ? 'in-sight' : ''">
+
+    <div class="side-menu left wide">
+      <h1>CONTACT US</h1>
+
+      <p>
+          The Watchmaker dance & production teams are based in Dublin, Ireland. 
+          MyArt School of Dance & Art has provided the venue and all kinds of support in the creation for the production.  
+          You are very welcome to reach out via the address below.
+      </p>
+
+      <table>
+        <tbody>
+          <tr>
+            <td>ADDRESS</td>
+            <td>PHONE</td>
+            <td>
+                <i class="instagram"></i>
+                <i class="facebook"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                MyArt Dublin<br>
+                City House<br>
+                Newmarket<br>
+                Dublin 8<br>
+                Ireland<br>
+                D08 NP5C
+            </td>
+            <td>
+                +353 87 709 9401<br><br>
+                EMAIL<br>
+                myart.dublin@gmail.com<br>
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="gallery right">
+      <!-- <img *ngFor="let src of imagesSet" src="{{galleryDir + src}}" [style.opacity]="imgConfig[src].opacity"> -->
+      <div>
+          <div [style.background-image]="'url(/assets/gallery/meet-the-crew/1000px/1_CREW.jpg)'"></div>
+      </div>
+    </div>
+
+  
+</section>

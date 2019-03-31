@@ -1,0 +1,104 @@
+.gallery {
+    position: absolute;
+    height: 100%;
+	top: 0px;
+
+    &.left {
+        left: 0px;
+    }
+
+    &.right {
+        right: 0;
+	}
+
+    div {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        
+        & > div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: opacity 4s ease;
+            background-size: cover;
+        }
+        /* img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            top: 0;
+            left: 0;
+            transition: opacity 4s ease;
+        } */
+    }
+
+    &.right,
+    &.left {
+        @media (min-width: $mediaL) {
+            width: 50%;
+            background-size: cover;
+        }
+        
+        @media (max-width: $mediaL) {
+            width: 50%;
+            background-size: cover;
+        }
+        
+        @media (max-width: $mediaM) {
+            width: 50%;
+            background-size: auto 100%;
+        }
+    
+        @media (max-width: $mediaMS) {
+            width: 100%;
+            background-size: auto 100%;
+            div img {
+                left: -100px;
+            }
+        }
+        
+        @media (max-width: $mediaS) {
+            width: 100%;
+        }
+    }
+
+    &.full-screen {
+        width: 100%;
+        height: 100%;
+
+        &.cropped {
+            div {
+                & > div {
+                    background-size: cover;
+                    
+                    @media (min-width: $mediaL) {
+                        // background-size: cover;
+                        background-position: 0 -100px;
+                    }
+                    
+                    @media (max-width: $mediaL) {
+                        // background-size: cover;
+                        background-position: 0 -100px;
+                    }
+                    
+                    @media (max-width: $mediaM) {
+                        // background-size: auto 100%;
+                        background-position: 0 -100px;
+                    }
+                
+                    @media (max-width: $mediaMS) {
+                        background-position: 33% 0;
+                    }
+                    
+                    @media (max-width: $mediaS) {
+                        background-position: 33% 0;
+                    }
+                }
+            }
+        }
+    }
+
+}

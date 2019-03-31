@@ -1,0 +1,178 @@
+@import "../Sass/variables";
+
+h1 {
+    @media (max-width: $mediaS) {
+        position: absolute;
+        top: -125px;
+    }
+}
+
+
+.horizontal-scroll-content {
+    ul {
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+
+        @media (max-width: $mediaS){
+            margin-top: 15%;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            margin-right: 9%;
+
+            font-size: 0.75em;
+            line-height: 2em;
+            white-space: normal;
+
+            transition: all .4s ease-in;
+
+            @media (min-width: $mediaL){
+                width: 50%;
+            }
+            @media (max-width: $mediaL){
+                width: 60%;
+            }
+            @media (max-width: $mediaM){
+                width: 60%;
+            }
+            @media (max-width: $mediaMS){
+                width: 80%;
+            }
+            @media (max-width: $mediaS){
+                width: 85%;
+                font-size: .9em;
+                line-height: 1.7em;
+            }
+        }
+    }
+}
+
+/* 
+.arrows-navigation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-purple-dark;
+
+    @media (max-width: $mediaS) {
+        top: 0;
+        bottom: initial;
+        background-color: transparent;
+    }
+
+
+    .social-wrapper,
+    .buttons-wrapper {
+        line-height: 92px;
+        * {
+            vertical-align: middle;
+        }
+    }
+
+
+    .social-wrapper {
+        float: left;
+        margin-left: 16%;
+        width: 305px;
+
+        @media (max-width: $mediaMS) {
+            line-height: 50px;
+            margin: 0;
+            padding: 0 15px;
+        }
+
+        @media (max-width: $mediaS) {
+            width: 30%;
+            margin-left: 10%;
+            padding: 0;
+            span { display: none; }
+        }
+
+        span { 
+            font-size: .75em; 
+            letter-spacing: 1px;
+            margin-right: 20px;
+        }
+    
+        i {
+            margin-left: 8px;
+        }
+    }
+
+
+    .buttons-wrapper {
+        float: right;
+        width: 46.38%;
+        margin-right: -23.19%;
+        bottom: 0;
+
+        @media (max-width: $mediaMS) {
+            width: 100%;
+            margin: 0;
+        }
+
+        @media (max-width: $mediaS){
+            width: 23.91%;
+        }
+        
+        button {
+            &.arrow-btn {
+                float: left;
+                width: 50%;
+                height: 92px;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                transition: background-color 0.3s;
+                cursor: pointer;
+
+                @media (max-width: $mediaS){
+                    height: 46px;
+                    background-size: 40%;
+                }
+
+    
+                &.left {
+                    background-image: url('../../assets/img/arrow-left.svg');
+                    background-color: $color-purple-dark;
+                }
+        
+                &.right {
+                    background-image: url('../../assets/img/arrow-right.svg');
+                    background-color: $color-purple-light;
+                }
+
+                &:hover {
+                    background-color: darken($color-purple-light, 20);    
+                }
+            }
+        }
+    }
+
+} */
+
+
+/* @media (min-width: $mediaL) {
+    width: 40%;
+}
+
+@media (max-width: $mediaL) {
+    width: 45%;
+}
+
+@media (max-width: $mediaM) {
+    width: 50%;
+}
+
+@media (max-width: $mediaMS) {
+    width: 75%;
+}
+
+@media (max-width: $mediaS) {
+    width: 100%;
+} */

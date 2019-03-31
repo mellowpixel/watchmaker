@@ -1,0 +1,18 @@
+@import "../Sass/animations";
+@import "../Sass/variables";
+
+.spinning-clock {
+	opacity: 0;
+	transition: opacity 2s ease;
+	width: 40%;
+	margin: 10% 0% 0% 10%;
+}
+
+.in-sight {
+
+	.spinning-clock {
+		opacity: 0.1;
+		animation: spin 120s infinite linear;
+	}
+
+}

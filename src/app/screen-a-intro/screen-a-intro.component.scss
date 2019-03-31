@@ -1,0 +1,78 @@
+@import "../Sass/variables";
+
+section {
+	text-align: center;
+}
+
+#clock-face {
+	position: absolute;
+	width: 350px;
+	top: 0;
+	left: 50%;
+	margin-left: -175px;
+}
+
+.central-block {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	width: 510px;
+	margin-left: -255px;
+
+	@media (min-width: $mediaL) {
+		width: 510px;
+		margin-left: -255px;
+	}
+
+	@media (max-width: $mediaL) {
+		width: 410px;
+		margin-left: -205px;
+	}
+
+	@media (max-width: $mediaM) {
+		width: 410px;
+		margin-left: -205px;
+	}
+
+	@media (max-width: $mediaMS) {
+		width: 360px;
+		margin-left: -180px;
+	}
+
+	@media (max-width: $mediaS) {
+		width: 310px;
+		margin-left: -155px;
+	}
+
+	text-align: center;
+	
+	#watchmaker_logo,
+	.sub-header {
+		width: 100%;
+	}
+
+	.sub-header {
+		margin-top: -24px;
+		font-family: $font-regular;
+		font-size: 15px;
+		letter-spacing: 1.5px;
+	}
+
+	#get-tickets {
+		width: 150px;
+		margin: 75px auto 0px;
+		
+		font-family: $font-regular;
+		letter-spacing: 1.17px;
+		color: #000;
+	}
+}
+
+.scroll-down-btn {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	margin-left: -23px;
+
+	border: none;
+}

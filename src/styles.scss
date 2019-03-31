@@ -1,0 +1,151 @@
+
+@import "app/Sass/variables";
+@import "app/Sass/fonts";
+@import "app/Sass/animations";
+@import "app/Sass/side-menu";
+@import "app/Sass/arrow-navigation";
+@import "app/Sass/gallery";
+@import "app/Sass/screen";
+@import "app/Sass/watchmaker_figure";
+
+:root {
+    --flicker-animation-duration: 2s;
+}
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    margin: 0px;
+    font-family: $font-light;
+    background-attachment: fixed;
+    color: #fff;
+    background-color: #000;
+}
+
+.screen-strecher {
+    height: 200%;
+}
+
+a {
+    // color: #000;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: $font-thin;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+
+    @media (max-width: $mediaM) {
+        font-size: 2em;
+    }
+
+    @media (max-width: $mediaS) {
+        font-family: $font-light;
+        font-size: 1.75em;
+    }
+}
+
+
+button {
+
+    outline: none;
+    border: none;
+    background: none;
+
+    &.rounded-btn {
+        height: 34px;
+        padding: 0px 20px;
+        border: solid 2px #FFFFFF;
+        border-radius: 100px;
+        background: none;
+
+        font-family: $font-light;
+        font-size: .75em;
+        color: #FFFFFF;
+        letter-spacing: 1.06px;
+        text-transform: uppercase;
+
+        transition: background-color 0.4s ease;
+
+        cursor: pointer;
+        
+        &.hollow {
+            &:hover {
+                background-color: rgba($color: #fff, $alpha: 0.2);
+            }
+        }
+
+        &.filled {
+            background-color: rgba($color: #fff, $alpha: 0.9);
+            &:hover {
+                background-color: rgba($color: #fff, $alpha: 1);
+            }
+        }
+    }
+
+
+    &.plus-btn {
+        width: 34px;
+        height: 34px;
+        border-radius: 100px;
+        border: none;
+
+        background-color: $color-purple-dark;
+        background-image: url('./assets/img/sandwich.svg');
+        background-repeat: no-repeat;
+        background-position: 9px 10px;
+        
+        transition: background-color 0.4s ease;
+        color: #FFFFFF;
+        font-size: 2em;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-purple-light;
+        }
+    }
+
+
+    &.scroll-down-btn {
+        background: url('./assets/img/arrow-btn.svg') no-repeat top left;
+        width: 46px;
+        height: 46px;
+        background-size: contain;
+        cursor: pointer;
+
+        border-radius: 100px;
+
+        transition: background-color 0.4s ease;
+
+        &:hover {
+            background-color: rgba($color: #fff, $alpha: 0.2);
+        }
+    }
+
+}
+
+
+i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+    &.instagram{
+        background-image: url('./assets/img/instagram-icon.svg');
+    }
+
+    &.facebook{
+        background-image: url('./assets/img/fb-icon.svg');
+    }
+}

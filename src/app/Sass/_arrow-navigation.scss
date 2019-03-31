@@ -1,0 +1,103 @@
+.arrows-navigation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-purple-dark;
+
+    @media (max-width: $mediaS) {
+        top: 0;
+        bottom: initial;
+        background-color: transparent;
+    }
+
+
+    .social-wrapper,
+    .buttons-wrapper {
+        line-height: 60px;
+        * {
+            vertical-align: middle;
+        }
+    }
+
+
+    .social-wrapper {
+        float: left;
+        margin-left: 16%;
+        width: 305px;
+
+        @media (max-width: $mediaMS) {
+            line-height: 30px;
+            margin: 0;
+            padding: 0 15px;
+        }
+
+        @media (max-width: $mediaS) {
+            width: 30%;
+            margin-left: 10%;
+            padding: 0;
+            span { display: none; }
+        }
+
+        span { 
+            font-size: .75em; 
+            letter-spacing: 1px;
+            margin-right: 20px;
+        }
+    
+        i {
+            margin-left: 8px;
+        }
+    }
+
+
+    .buttons-wrapper {
+        float: right;
+        width: 46.38%;
+        margin-right: -23.19%;
+        bottom: 0;
+
+        @media (max-width: $mediaMS) {
+            width: 100%;
+            margin: 0;
+        }
+
+        @media (max-width: $mediaS){
+            width: 23.91%;
+        }
+        
+        button {
+            &.arrow-btn {
+                float: left;
+                width: 50%;
+                height: 60px;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-size: 15%;
+                transition: background-color 0.3s;
+                cursor: pointer;
+
+                @media (max-width: $mediaS){
+                    height: 46px;
+                    background-size: 40%;
+                }
+
+    
+                &.left {
+                    background-image: url('/assets/img/arrow-left.svg');
+                    background-color: $color-purple-dark;
+                }
+        
+                &.right {
+                    background-image: url('/assets/img/arrow-right.svg');
+                    background-color: $color-purple-light;
+                }
+
+                &:hover {
+                    background-color: darken($color-purple-light, 20);    
+                }
+            }
+        }
+    }
+
+}

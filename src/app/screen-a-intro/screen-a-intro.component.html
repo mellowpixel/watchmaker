@@ -1,0 +1,19 @@
+<section id="intro-screen" [style.height.px]="height" [ngClass]="inSight ? 'in-sight' : ''">
+  <img id="clock-face" src="../../assets/img/clock-face.svg">
+
+  <div class="central-block">
+    
+    <img id="watchmaker_logo" [style.opacity]="1-scrolledRatio" src="../../assets/img/watchmaker_logo.svg">
+
+    <h2 class="sub-header">CLASSICAL AND STREET DANCE THEATRE</h2>
+
+    <a href="https://www.eventim-light.com/ch/a/5c5b5d5757914f0001e066fa/" target="_blank">
+      <button class="rounded-btn filled" id="get-tickets">Get Tickets</button>
+    </a>
+
+  </div>
+
+  <button class="scroll-down-btn" (click)="goToNextScreen()"></button>
+
+  <p class="screen-info">{{screenInfo}}</p>
+</section>

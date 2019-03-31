@@ -1,0 +1,7 @@
+<div>
+  <!-- <img *ngFor="let src of imagesSet" src="{{galleryDir + src}}" [style.opacity]="imgConfig[src].opacity"> -->
+  <div *ngFor="let src of imagesSet" 
+      [style.background-image]="getImage(src)"
+      [style.opacity]="imgConfig[src].opacity">
+  </div>
+</div>

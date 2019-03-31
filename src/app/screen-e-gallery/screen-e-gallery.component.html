@@ -1,0 +1,24 @@
+
+<section id="gallery-screen" [style.height.px]="height" [ngClass]="inSight ? 'in-sight' : ''">
+  <gallery-component galleryID="general" class="gallery full-screen cropped"></gallery-component>
+  
+  <div class="side-menu left transparrent wide">
+    <h1>GALLERY</h1>
+
+    <div class="arrows-navigation">
+    
+      <div class="social-wrapper">
+        <span>FOLLOW THE WATCHMAKER</span>
+        <i class="instagram"></i>
+        <i class="facebook"></i>
+      </div>
+    
+      <div class="buttons-wrapper">
+        <button class="arrow-btn left" (click)="previousImage()"></button>
+        <button class="arrow-btn right" (click)="nextImage()"></button>
+      </div>
+    
+    </div>
+  </div>
+
+</section>
